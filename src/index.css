@@ -1,13 +1,381 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    
+
+ 
+ .slick-prev{
+    width: 50px !important;
+   height: 50px !important;
+   z-index: 9999;
+    left: 10px !important;
+   
+ 
+    
+ }
+ .slick-prev:before {
+  content: '←'; 
+}
+.slick-next{
+    width: 50px !important;
+    height: 50px !important;
+    z-index: 9999;
+    right: 15px !important;
+} 
+
+
+.slick-prev:before, .slick-next:before {
+    font-size: 50px !important;
+    color: rgb(148, 142, 142) !important;
+    z-index: 999 !important;
+    
+ 
+}  
+ 
+#mensname{color: #848484;}
+
+.tabs button {
+    margin-right: 10px;
+    /* padding: 10px; */
+    cursor: pointer;
+    font-size: 27px;
+  }
+  .tabs button.active {
+    /* font-weight: bold; */
+    text-decoration: underline;
+  }
+  .tab-content {
+    margin-top: 20px;
+  }
+  .container {
+    position: relative;
+     width: 95%; 
+    height: 470px; 
+    
+}
+.box1, .box2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box1 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2130302-2AY.01_600x.jpg?v=1721141422);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.box2 {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2130302-2AY.02_600x.jpg?v=1721141422);
+  display: none; 
+ background-size: 348px 464px;  
+ background-size: cover;
 }
+
+.container:hover .box2 {
+  display: block; 
+}
+.sub-hover .relax{
+  width: 100%;
+  height: 60px;
+  background: white;
+  top: -18px;
+  position: absolute;
+  display: none;
+}
+.sub-hover:hover .relax{
+  display: block;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ }
+.relax ul li:hover{
+  background-color: black;
+  color: white;
+}
+.img-1 > .btn-1 >.z-2{
+  display: none;
+  
+}  
+.img-1:hover > .btn-1 >.z-2{
+  display: block;
+}
+.img-1:hover > .btn-1 > .z-1{
+  display: none;
+}
+.box-1 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2310173-5JR.01_600x.jpg?v=1721145183);
+
+}
+
+.box-2 {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/PRE-FALL_WWLOOK1_1edff77d-65ff-406b-ab9b-462c944ddf63_600x.jpg?v=1723645188);
+  display: none; 
+ background-size: 348px 464px; 
+ background-size: cover; 
+}
+.container:hover .box-2 {
+  display: block; 
+}
+.box-1, .box-2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-3 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2130297-4BO.01_600x.jpg?v=1723489145);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-4 {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/PRE-FALL_WW_LOOK3.-01_600x.jpg?v=1724254193);
+  display: none; 
+ background-size: 348px 464px;  
+ background-size: cover;
+}
+.container:hover .box-4 {
+  display: block; 
+}
+.box-3, .box-4 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-5 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2310170-1AA.01_600x.jpg?v=1722278597);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-6 {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/PRE-FALL_WWLOOK4.0671_dc694f9c-d2a3-4e02-abd4-e6c51c338652_600x.jpg?v=1723645262);
+  display: none; 
+ background-size: 348px 464px;  
+ background-size: cover;
+}
+.container:hover .box-6 {
+  display: block; 
+}
+.box-5, .box-6 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.container:hover .box-8 {
+  display: block; 
+}
+.box-7, .box-8 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-7 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2210501-2AY.01_600x.jpg?v=1722885092);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-8 {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2210501-2AY.02_600x.jpg?v=1722885092);
+  display: none; 
+ background-size: 348px 464px;
+ background-size: cover;  
+}
+.container:hover .box-10 {
+  display: block; 
+}
+.box-9, .box-10 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-9 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2210502-5AR.01_600x.jpg?v=1722885550);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-10 {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2210502-5AR.02_600x.jpg?v=1722885550);
+  display: none; 
+ background-size: 348px 464px; 
+ background-size: cover; 
+}
+.container:hover .box-12 {
+  display: block; 
+}
+.box-11, .box-12 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-11 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2110377-012.02_600x.jpg?v=1722283940);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-12 {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2110377-012.01_600x.jpg?v=1722283940);
+  display: none; 
+ background-size: 348px 464px; 
+ background-size: cover; 
+}
+.box-13, .box-14{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-13 {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2410193-002.01_2bc6266d-049d-41c3-bfc9-031bf6654c10_600x.jpg?v=1725031149);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-14 {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/2410193-002.02_39642e80-9f84-42a2-8eba-dcf45bae7317_600x.jpg?v=1725031149);
+  display: none; 
+ background-size: 348px 464px; 
+ background-size: cover; 
+}
+.container:hover .box-14 {
+  display: block; 
+}
+.box-a, .box-b{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-a {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/1410254-002.8945_600x.jpg?v=1725029679);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-b {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/1410254-002.8966_600x.jpg?v=1725029680);
+  display: none; 
+ background-size: 348px 464px; 
+ background-size: cover; 
+}
+.container:hover .box-b {
+  display: block; 
+}
+.box-c, .box-d{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-c {
+  background-image: url(	https://cdn.shopify.com/s/files/1/0555/5722/6653/files/1110547-367.01_600x.jpg?v=1721157852);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-d {
+ background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/1110547-367.02_600x.jpg?v=1721157853);
+  display: none; 
+ background-size: 348px 464px; 
+ background-size: cover; 
+}
+.container:hover .box-d {
+  display: block; 
+}
+.box-e, .box-f{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-e {
+  background-image: url(	https://cdn.shopify.com/s/files/1/0555/5722/6653/files/1110352-2AY.01_600x.jpg?v=1721673272);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-f {
+ background-image: url(	https://cdn.shopify.com/s/files/1/0555/5722/6653/files/1110352-2AY.02_600x.jpg?v=1721673272);
+  display: none; 
+ background-size: 348px 464px; 
+ background-size: cover; 
+}
+.container:hover .box-f {
+  display: block; 
+}
+.box-g, .box-h{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ 
+}
+.box-g {
+  background-image: url(https://cdn.shopify.com/s/files/1/0555/5722/6653/files/1210542-5AF-01_600x.jpg?v=1723217152);
+  background-size: 348px 464px; 
+  background-size: cover;
+}
+
+.box-h {
+ background-image: url(	https://cdn.shopify.com/s/files/1/0555/5722/6653/files/1210542-5AF-02_600x.jpg?v=1723217152);
+  display: none; 
+ background-size: 348px 464px; 
+ background-size: cover; 
+}
+.container:hover .box-h {
+  display: block; 
+}
+.rajasthan-menu{
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  left: 0px;
+ display: grid;
+ background-color: #F9F9F9;
+ gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 1s;
+  top: 75px;
+}
+li:hover .rajasthan-menu{
+  opacity: 1;
+  visibility: visible; 
+}
+.rajasthan-menu .first-p ul li{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  
+}
+.rajasthan-menu .first-p ul li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+ 
+ .customodal{
+  position: fixed;
+  width: 100vw;
+ }
+ .extra{
+  width: 100% !important;
+  display: grid !important;
+  grid-template-columns: 1fr 4fr !important;
+  
+ }
+ .accordion-content {
+  white-space: pre-wrap; 
+}
+ 
+ 
+
+
+
