@@ -35,7 +35,7 @@ const Header = () => {
     <FaAngleRight className='text-[grey] text-[19px] hover:text-[white] cursor-pointer' />
     
 </div>
-<div className='header w-full h-[45px]  flex '  >
+<div className='header w-full h-[45px]  flex  bg-[white] sticky top-0 z-50 '  >
 <div className='c1  w-[50%] h-[40px] flex list-none lg:justify-around items-center'>
 <li className='lg:hidden list-none'></li>
 <li className='font-[700] text-[18px] flex items-center sm:flex sm:items-center  '> <span className='lg:hidden '><IoMenuSharp /></span><span className=''>Frank And Oak</span></li>
